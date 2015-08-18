@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <sqlite3.h>
 #import "Student.h"
+#import "StudentTool.h"
 
 @interface ViewController () <UITableViewDataSource, UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
@@ -47,6 +48,26 @@
     
     // 关闭数据库
 //    sqlite3_close(db);
+}
+
+/**
+ *  测试FMDB的使用
+ */
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    // 添加数据
+//    for (int i = 0; i < 100; i++) {
+//        Student *s = [[Student alloc] init];
+//        s.name = [NSString stringWithFormat:@"小明-%d", i];
+//        s.age = arc4random() %5 + 15;
+//        [StudentTool addStudent:s];
+//    }
+    
+    // 取出数据
+    NSArray *students = [StudentTool students];
+    for (Student *s in students) {
+        NSLog(@"%@  %d", s.name, s.age);
+    }
 }
 
 /**
