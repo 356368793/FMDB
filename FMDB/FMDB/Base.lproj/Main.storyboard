@@ -28,7 +28,10 @@
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ex8-4I-zsf">
                                 <rect key="frame" x="23" y="154" width="328" height="334"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="Tw8-nx-PDf"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3u-Tn-c6b">
                                 <rect key="frame" x="29" y="32" width="43" height="21"/>
@@ -58,6 +61,7 @@
                     <connections>
                         <outlet property="ageField" destination="34A-2b-KP0" id="jUr-O5-aig"/>
                         <outlet property="nameField" destination="vvO-6g-dLd" id="JZA-jF-vhx"/>
+                        <outlet property="tableView" destination="Ex8-4I-zsf" id="l9j-dQ-Sww"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

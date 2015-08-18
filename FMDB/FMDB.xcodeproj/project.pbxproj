@@ -15,6 +15,8 @@
 		56894A601B829C94007BF287 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56894A5F1B829C94007BF287 /* Images.xcassets */; };
 		56894A631B829C94007BF287 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56894A611B829C94007BF287 /* LaunchScreen.xib */; };
 		56894A6F1B829C94007BF287 /* FMDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56894A6E1B829C94007BF287 /* FMDBTests.m */; };
+		56894A791B829F1C007BF287 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56894A781B829F1C007BF287 /* libsqlite3.0.dylib */; };
+		56894A7C1B82AB9C007BF287 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 56894A7B1B82AB9C007BF287 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		56894A681B829C94007BF287 /* FMDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56894A6D1B829C94007BF287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56894A6E1B829C94007BF287 /* FMDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBTests.m; sourceTree = "<group>"; };
+		56894A781B829F1C007BF287 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		56894A7A1B82AB9C007BF287 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		56894A7B1B82AB9C007BF287 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56894A791B829F1C007BF287 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +93,8 @@
 				56894A541B829C94007BF287 /* AppDelegate.m */,
 				56894A591B829C94007BF287 /* ViewController.h */,
 				56894A5A1B829C94007BF287 /* ViewController.m */,
+				56894A7A1B82AB9C007BF287 /* Student.h */,
+				56894A7B1B82AB9C007BF287 /* Student.m */,
 				56894A5C1B829C94007BF287 /* Main.storyboard */,
 				56894A5F1B829C94007BF287 /* Images.xcassets */,
 				56894A611B829C94007BF287 /* LaunchScreen.xib */,
@@ -99,6 +107,7 @@
 		56894A4F1B829C94007BF287 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				56894A781B829F1C007BF287 /* libsqlite3.0.dylib */,
 				56894A501B829C94007BF287 /* Info.plist */,
 				56894A511B829C94007BF287 /* main.m */,
 			);
@@ -224,6 +233,7 @@
 			files = (
 				56894A551B829C94007BF287 /* AppDelegate.m in Sources */,
 				56894A581B829C94007BF287 /* FMDB.xcdatamodeld in Sources */,
+				56894A7C1B82AB9C007BF287 /* Student.m in Sources */,
 				56894A5B1B829C94007BF287 /* ViewController.m in Sources */,
 				56894A521B829C94007BF287 /* main.m in Sources */,
 			);
